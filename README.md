@@ -19,8 +19,8 @@
 **README.MD**
 **instructions.txt**
 
-Posisi direktori diatas untuk membantu kita memahami posisi file ketika ingin menjalankan simulasi SDN.
-_Generating Normal traffic:
+Posisi direktori diatas untuk membantu kita memahami posisi file ketika ingin menjalankan simulasi SDN : 
+Generating Normal traffic:
 run command ryu-manager collect_normal_traffic.py in generate_normal_traffic folder.
 run command "service openvswitch-switch start"
 run command sudo python generate_normal_traffic.py in generate_normal_traffic folder.
@@ -47,11 +47,20 @@ now on node h17 ping 10.0.0.18
 on node h6 hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood 10.0.0.12 icmp flood
 hping3 -S -V -d 120 -w 64 -p 80 --rand-source --flood 10.0.0.12 syn flood
 hping3 -2 -V -d 120 -w 64 -p 80 --rand-source --flood 10.0.0.12 udp flood
-hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood -a 10.0.0.12 10.0.0.12 smurfs_
+hping3 -1 -V -d 120 -w 64 -p 80 --rand-source --flood -a 10.0.0.12 10.0.0.12 smurfs
 
+Hasil analisis dari kode program yang dijalankan adalah 
+**Sebelum direproduce code**
+Direktori generate_normal_traffic akan menjalankan simulsai dari skrip untuk menjalankan lalu lintas jaringan secara normal. pada file collect_normal_traffic.py akan mengatur setup untuk proses pada switch dan mencatat data lalu lintas yang melewati switch. dan file generate_normal_traffic.py bertujuan untuk menghasilkan lalu lintas yang mencerminkan penggunaan jaringan sehari hari yang normal, seperti HTTPS atau DNS.Hasil yang didapat menjalankan direktori generate_normal_traffic untuk mencata lalu lintas normal yang digunakan dan dapat dibandingkan dengan hasil lalu lintas DDoS.
 
+Pada Direktori generate_ddos_traffic menjalan skrip file dengan perintah ryu-manager collect_ddos_traffic.py akan mengatur pengaturan yang dibutuhkan pada switch dan mengumpulkan data lalu lintas yang menunjukkan serangan DDoS. jadi melalui perintah menjalankan skrip file generate_ddos_traffic.py akan menghasilkan simulasi lalu lintas yang mencerminkan seragangan DDoS seperti ICMP flood.
+Jadi menjalankan skrip pada direktori generate_ddos_traffic untuk menghasilkan dan mengumpulkan data lalu lintas jaringan DDoS.
 
+Pada Direktori Detection, terdapat skrip mininet file SDN.py yang mendeteksi serangan DDoS dan lalu lintas normal yang telah dijalankan terlebih dulu pada direktori (sesuai intruksi). 
+memulai perintah ryu-manager pada file Detection.py untuk memonitor dan mengumpulkan data serangan DDoS atau lalu lintas normal. Skrip mininet SDN.py yang mengatur dan membuat topologi jaringan virtual yang mendefinisikan host, switch dan koneksi dalam topologi.
 
+**Setelah reproduce code**
+pada Direktori generate_normal_traffic dilakukan reproduce kode pada file generate_normal_traffic.py akan dijalankan untuk menampilkan lalu lintas dengan cara yang lebih efisien atau lebih akurat. jadi file setelah dilakukan reproduce code akan tetap menjalankan fungsi untuk bisa diakses file SDN.py dalam mendetksi hasil lalulintas DDoS dan lalu lintas normal.
 
 
 # Detection-of-DDoS-attacks-on-SDN-network-using-Machine-Learning-
