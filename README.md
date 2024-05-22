@@ -1,3 +1,10 @@
+![Screenshot 2024-05-22 114944](https://github.com/201solafide/Reproduce_Code/assets/146401936/e35abcde-64c4-4ca9-8ac5-6b91dd7c022e)
+![Screenshot 2024-05-22 115431](https://github.com/201solafide/Reproduce_Code/assets/146401936/ee38a8e4-d609-43ff-be57-bf7351f00253)
+![Screenshot 2024-05-22 115546](https://github.com/201solafide/Reproduce_Code/assets/146401936/9efeaf01-675a-4327-8760-cd904d52d040)
+![Screenshot 2024-05-22 115555](https://github.com/201solafide/Reproduce_Code/assets/146401936/94620247-e0f9-4353-baee-0d1f136dcf29)
+![Screenshot 2024-05-22 115603](https://github.com/201solafide/Reproduce_Code/assets/146401936/d6500665-6d75-41bd-9536-1bfbccb137e1)
+![Screenshot 2024-05-22 115609](https://github.com/201solafide/Reproduce_Code/assets/146401936/ba2ec292-8238-45a3-9170-2decc55e5dc8)
+
 # Posisi Direktori
 
 **Detection**
